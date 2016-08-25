@@ -1,0 +1,274 @@
+/*
+Theme Name: Zavah
+Theme URI: betterweb.com
+Author: Alik
+Author URI: https://wordpress.org/
+Description: For Custom quize
+Version: 1.0
+*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td, .rtl {
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+
+    unicode-bidi: embed;
+}
+.rtl div[class^="col-md"]{
+    float: right;
+}
+body{
+    background: url(images/main-bgr.jpg) no-repeat;
+    background-size: cover;  
+}
+
+/********TOOLS*******/
+.no-padding{
+    padding: 0
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+h1, h2{
+    padding:0; 
+    margin: 0; 
+}
+.gold-color{
+    color: #bca632;
+}
+.gold-bgr{
+    background: #bca632;   
+}
+.white-color{
+    color: #fff;
+}
+.white-bgr{
+    background: #fff
+}
+.dark-bgr{
+    background: #6d6e71; 
+}
+.bold-text{
+    font-weight: bold;
+}
+.padding-tb-20{
+    padding: 20px; 
+}
+.font-size-30{
+    font-size: 30px;
+}
+.line-height-30{
+    line-height: 30px;
+}
+
+/********Main content********/
+#top-content{
+    margin-top: 250px;
+    padding-top: 15px;
+    background-image:url(images/footer-bgr.png) ; 
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+.question-chart-wrap{
+    
+    margin-top: 50px;
+   padding-bottom: 15px;
+    display: none;
+}
+#wrap-num-1{
+    display: inline-block;
+}
+.question-chart-body{
+    border-left: 1px solid #bca632; 
+    border-right: 1px solid #bca632;
+    background:#f5f0e3    
+}
+
+.question-chart-option{
+    border-right: 1px solid #bca632;
+    border-left: 1px solid #bca632;
+    border-bottom: 1px solid #bca632; 
+    background:#f5f0e3; 
+    padding-bottom: 15px 
+}
+.question-chart-option p:hover  label{
+    text-decoration: underline;
+}
+.question-chart-wrap-header{
+    
+}
+
+.main-title{
+    display: inline-block;
+    margin: 0;
+    padding:0 19px;
+    background:#fff;
+    z-index:9
+}
+.main-title span:nth-child(1)
+{
+    color: #444;
+}
+.main-title:before, 
+.main-title:after{ 
+    z-index:-9;   
+    bottom:15px;
+    position: absolute;
+    height: 2.5px;
+    width: 120px;
+    content: " ";
+    display: inline-block;
+    background:#bca632; 
+
+}
+.main-title:before{
+    left:100%;
+}
+.main-title:after{
+    right:100%;
+}
+.question-title{
+    padding: 10px 0;
+}
+.right-corner-text p{
+line-height: 30px;
+}
+
+.cool-checkbox{
+    display:none;
+}
+.cool-checkbox + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 5px;
+    vertical-align:middle;
+    background:#bca632;
+    cursor:pointer;
+    border: 1px solid #bca632;
+    color: #fff;
+    position:relative
+}
+.question-chart-option p:hover  label span{
+     border: 2px solid #fff;
+}
+/*http://stackoverflow.com/questions/658044/tick-symbol-in-html-xhtml*/
+.cool-checkbox:checked + label > span:before {
+   
+    
+    color:#fff;
+    content: "✔";
+    position:absolute;
+    left:3px;
+    top:-1px;
+}
+.right-corner-wrap{
+   
+}
+
+.question-flag{
+    font-size:28px;
+    padding: 5px 85px 10px 35px;
+    line-height:25px;
+    
+    display: inline-block;
+    margin-bottom: 25px;
+    background: url(images/falg.png) no-repeat;
+    background-size: 100% 40px;
+    text-align: left;
+}
+
+.question-flag:before{
+    position:absolute;
+    content:" ";
+    width:1px;
+    background:#fff;
+    height:30px;
+    top:5px;
+    right:65px
+}
+
+/*******Right corner*******/
+.line-left{
+    left:0;
+    bottom:0;
+}
+.line-right{
+    right:0;
+    bottom:0;
+}
+.gold-line{
+    height: 2.5px;
+    width: 120px;
+}
+.right-corner-logo{
+    
+}
+.main-logo{
+    margin: 0 auto 10px;
+}
+.right-corner-text p{
+    font-size: 30px;
+}
+
+/******Home Footer********/
+.home-footer{
+    margin:20px 0;
+    padding: 15px;
+}
+.footer-image img{
+    display:inline-block;
+}
+.footer-image:before{
+    position: absolute;
+    right: 15px;
+    width: 1px;
+    height: 100%;
+    content: " ";
+    display: inline-block;
+    background: #fff;
+    top:0px;
+}
+
+
+/*******Contact form********/
+#contact-wrap h2 {
+color: #fff;
+margin: 0;
+}
+
+.cf-input{
+    padding:0 5px;
+}
+.cf-input input{
+    height:30px;
+    margin:;
+    width:100%;
+    border-radius:0;
+    -o-border-radius:0;
+    -webkit-border-radius:0;
+    padding:5px;
+    margin:5px;
+    -webkit-box-shadow: inset 1px 5px 9px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 1px 5px 9px 0px rgba(0,0,0,0.75);
+box-shadow: inset 1px 5px 9px 0px rgba(0,0,0,0.75);
+border:0
+}
+
+.wpcf7-submit{
+    -webkit-box-shadow: inset 1px 15px 99px 0px rgba(0,0,0,0.75) !important;
+-moz-box-shadow: inset 1px 15px 99px 0px rgba(0,0,0,0.75) !important;
+box-shadow: inset 1px 15px 99px 0px rgba(0,0,0,0.75) !important;
+color:#fff !important;
+border:0
+}
+
+/*********Media**********/
+@media(min-width: 300px) and (max-width: 767px){
+    .rtl div[class^="col-md"]{
+        float: left;
+    }
+}
